@@ -1,0 +1,7 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix} Cybernetics_DLP
+<#if licenseLast??>
+${licenseLast}
+</#if>
