@@ -48,9 +48,9 @@ public class BasicInfo_AL {
                         if (line.contains("OS Name:")) {
                             info_model.setOS_Name(line.replace("OS Name:", "").trim());
                         }
-//                        if (line.contains("OS Version:")) {
-//                            info_model.setOS_Version(line.replace("OS Version:", "").trim());
-//                        }
+                        if (line.startsWith("OS Version:")) {
+                            info_model.setOS_Version(line.replace("OS Version:", "").trim());
+                        }
                         if (line.contains("OS Manufacturer:")) {
                             info_model.setOS_Manufacturer(line.replace("OS Manufacturer:", "").trim());
                         }
@@ -82,9 +82,9 @@ public class BasicInfo_AL {
                         /*
                             processor 
                          */
-//                        if (line.contains("BIOS Version:")) {
-//                            info_model.setBIOSVersion(line.replace("BIOS Version:", "").trim());
-//                        }
+                        if (line.startsWith("BIOS Version:")) {
+                            info_model.setBIOSVersion(line.replace("BIOS Version:", "").trim());
+                        }
 
                         if (line.contains("Windows Directory:")) {
                             info_model.setWindowsDirectory(line.replace("Windows Directory:", "").trim());

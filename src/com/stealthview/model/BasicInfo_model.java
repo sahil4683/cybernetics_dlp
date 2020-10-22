@@ -18,7 +18,7 @@ public class BasicInfo_model {
 
     private String HostName;
     private String OS_Name;
-//    private String OS_Version;
+    private String OS_Version;
     private String OS_Manufacturer;
     private String OS_Configuration;
     private String OS_BuildType;
@@ -29,7 +29,7 @@ public class BasicInfo_model {
     private String SystemModel;
     private String SystemType;
     private String Processor; //list
-//    private String BIOSVersion;
+    private String BIOSVersion;
     private String WindowsDirectory;
     private String BootDevice;
     private String TimeZone;

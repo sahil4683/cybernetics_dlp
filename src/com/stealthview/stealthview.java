@@ -18,26 +18,28 @@ import java.util.Map;
 public class stealthview {
 
     public static void main(String[] args) {
-
-        Map<Integer, String> inspector = new HashMap<>();
-        inspector.put(100, "false");
-        inspector.put(200, "false");
-        inspector.put(300, "false");
-
-        for (int i = 0; i < 5; i++) {
-
-            for (Map.Entry mi : inspector.entrySet()) {
-                if (mi.getKey().equals(100) && mi.getValue().equals("false")) {
-                    mi.setValue(
-                            new BasicInfo_DTO()
-                                    .StoreInfo(
-                                            new BasicInfo_AL()
-                                                    .processInfo()
-                                    ).getDTOResult()
-                    );
-                }
-            }
-        }
+        BasicInfo_AL basic=new BasicInfo_AL();
+        System.out.println(basic.processInfo());
+//
+//        Map<Integer, String> inspector = new HashMap<>();
+//        inspector.put(100, "false");
+//        inspector.put(200, "false");
+//        inspector.put(300, "false");
+//
+//        for (int i = 0; i < 5; i++) {
+//
+//            for (Map.Entry mi : inspector.entrySet()) {
+//                if (mi.getKey().equals(100) && mi.getValue().equals("false")) {
+//                    mi.setValue(
+//                            new BasicInfo_DTO()
+//                                    .StoreInfo(
+//                                            new BasicInfo_AL()
+//                                                    .processInfo()
+//                                    ).getDTOResult()
+//                    );
+//                }
+//            }
+//        }
 //        BasicInfo_AL aL = new BasicInfo_AL();
 //        BasicInfo_DTO dTO = new BasicInfo_DTO();
 //
